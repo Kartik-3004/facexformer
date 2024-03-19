@@ -32,3 +32,12 @@ conda activate facexformer
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
+## TODOs
+- Release dataloaders for the datasets used.
+- Release training script.
+
+## Citation
+If you find _FaceXFormer_ useful for your research, please consider citing us:
+
+```bibtex
+```
