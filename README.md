@@ -43,7 +43,7 @@ The directory structure should finally be:
 
 ```
   . ── facexformer ──┌── ckpts/model.pt
-                     ├── networks
+                     ├── network
                      └── inference.py                    
 ```
 
