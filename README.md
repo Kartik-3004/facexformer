@@ -11,3 +11,9 @@ Johns Hopkins University
 <a href='https://huggingface.co/kartiknarayan/facexformer'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange'></a>
 
 </div>
+
+This is the official implementation of **[_FaceXFormer_](https://kartik-3004.github.io/facexformer_web/)**, a unified transformer for facial analysis:
+
+&emsp;✅ that is capable of handling a comprehensive range of facial analysis tasks such as face parsing, landmark detection, head pose estimation, attributes recognition, and estimation of age, gender, race, and landmarks visibility.<br>
+&emsp;✅ that leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token, enabling the integration of multiple tasks within a single framework<br>
+&emsp;✅ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across eight heterogenous tasks, all while maintaining the real-time performance of 37 FPS<br>
