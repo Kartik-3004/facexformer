@@ -32,6 +32,20 @@ conda activate facexformer
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
+# Download Models
+The models can be downloaded manually from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) or using python:
+```python
+from huggingface_hub import hf_hub_download
+
+hf_hub_download(repo_id="kartiknarayan/facexformer", filename="facexformer/ckpts/model.pt", local_dir="./ckpts")
+```
+The directory structure should finally be:
+
+```
+  . ── facexformer ──┌── ckpts/model.pt
+                     └── inference.py                    
+```
+
 ## TODOs
 - Release dataloaders for the datasets used.
 - Release training script.
