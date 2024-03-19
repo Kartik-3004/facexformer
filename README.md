@@ -48,8 +48,8 @@ The directory structure should finally be:
 ```
 # Usage
 
-Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct.
-For demo purposes, we have released the code for inference on a single image.
+Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct.<br>
+For demo purposes, we have released the code for inference on a single image.<br>
 It supports a variety of tasks which can be prompted by changing the "task" argument. 
 
 ```python
