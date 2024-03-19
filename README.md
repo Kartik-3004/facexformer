@@ -17,3 +17,18 @@ This is the official implementation of **[_FaceXFormer_](https://kartik-3004.git
 1️⃣ that is capable of handling a comprehensive range of facial analysis tasks such as face parsing, landmark detection, head pose estimation, attributes recognition, age/gender/race estimation and landmarks visibility prediction<br>
 2️⃣ that leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token, enabling the integration of multiple tasks within a single framework<br>
 3️⃣ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across eight heterogenous tasks, all while maintaining the real-time performance of 37 FPS<br>
+
+<img src='assets/intro_viz.png'>
+
+# News/Updates
+- [03/19/2024] 🔥 We release FaceXFormer.
+
+# Installation
+```bash
+conda env create --file environment_facex.yml
+conda activate facexformer
+
+# Install requirements
+pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
+pip install -r requirements.txt
+```
