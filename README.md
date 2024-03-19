@@ -1,6 +1,6 @@
 <div align="center">
 
-# _FaceXFormer_ : A Unified Transformer for Facial Analysis
+# _FaceXFormer_ : A Unified Transformer <br> for Facial Analysis
 
 [Kartik Narayan*](https://kartik-3004.github.io/portfolio/) &emsp; [Vibashan VS*](https://vibashan.github.io) &emsp; [Rama Chellappa](https://engineering.jhu.edu/faculty/rama-chellappa/) &emsp; [Vishal M. Patel](https://engineering.jhu.edu/faculty/vishal-patel/)  
 
@@ -12,7 +12,12 @@ Johns Hopkins University
 
 </div>
 
-This is the official implementation of **[_FaceXFormer_](https://kartik-3004.github.io/facexformer_web/)**, a unified transformer for facial analysis:
+Official implementation of **[_FaceXFormer_ : A Unified Transformer for Facial Analysis](https://kartik-3004.github.io/facexformer_web/)**.
+<hr />
+
+## Highlights
+
+**_FaceXFormer_**, is the first unified transformer for facial analysis:
 
 1️⃣ that is capable of handling a comprehensive range of facial analysis tasks such as face parsing, landmark detection, head pose estimation, attributes recognition, age/gender/race estimation and landmarks visibility prediction<br>
 2️⃣ that leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token, enabling the integration of multiple tasks within a single framework<br>
@@ -20,7 +25,23 @@ This is the official implementation of **[_FaceXFormer_](https://kartik-3004.git
 
 <img src='assets/intro_viz.png'>
 
-# News/Updates
+> **<p align="justify"> Abstract:** *In this work, we introduce FaceXformer, an end-to-end unified transformer
+> model for a comprehensive range of facial analysis tasks such as face parsing, landmark detection,
+> head pose estimation, attributes recognition, and estimation of age, gender, race, and landmarks visibility.
+> Conventional methods in face analysis have often relied on task-specific designs and preprocessing techniques,
+> which limit their approach to a unified architecture. Unlike these conventional methods, our FaceXformer
+> leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token,
+> enabling the integration of multiple tasks within a single framework. Moreover, we propose a parameter-efficient
+> decoder, FaceX, which jointly processes face and task tokens, thereby learning generalized and robust face
+> representations across different tasks. To the best of our knowledge, this is the first work to propose a
+> single model capable of handling all these facial analysis tasks using transformers.  We conducted a
+> comprehensive analysis of effective backbones for unified face task processing and evaluated different task
+> queries and the synergy between them. We conduct experiments against state-of-the-art specialized models and
+> previous multi-task models in both intra-dataset and cross-dataset evaluations across multiple benchmarks.
+> Additionally, our model effectively handles images "in-the-wild," demonstrating its robustness and generalizability
+> across eight different tasks, all while maintaining the real-time performance of 37 FPS.* </p>
+
+# :rocket: News
 - [03/19/2024] 🔥 We release FaceXFormer.
 
 # Installation
@@ -74,3 +95,5 @@ If you find _FaceXFormer_ useful for your research, please consider citing us:
 
 ```bibtex
 ```
+## Contact
+If you have any questions, please create an issue on this repository or contact at knaraya4@jhu.edu
