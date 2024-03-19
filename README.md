@@ -46,6 +46,16 @@ The directory structure should finally be:
                      ├── network
                      └── inference.py                    
 ```
+# Usage
+
+Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct:
+```python
+python inference.py --model_path ckpts/model.pt \
+                    --image_path image.png \
+                    --results_path results \
+                    --task parsing \
+                    --gpu_num 0
+```
 
 ## TODOs
 - Release dataloaders for the datasets used.
