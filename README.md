@@ -50,6 +50,7 @@ The directory structure should finally be:
 
 Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct.
 For demo purposes, we have released the code for inference on a single image.
+It supports a variety of tasks which can be prompted by changing the "task" argument. 
 
 ```python
 python inference.py --model_path ckpts/model.pt \
