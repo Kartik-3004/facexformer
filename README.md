@@ -48,13 +48,17 @@ The directory structure should finally be:
 ```
 # Usage
 
-Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct:
+Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct.
+For demo purposes, we have released the code for inference on a single image.
+
 ```python
 python inference.py --model_path ckpts/model.pt \
                     --image_path image.png \
                     --results_path results \
                     --task parsing \
                     --gpu_num 0
+
+-- task = [parsing, landmarks, headpose, attributes, age_gender_race, visibility]
 ```
 
 ## TODOs
