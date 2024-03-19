@@ -37,7 +37,7 @@ The models can be downloaded manually from [HuggingFace](https://huggingface.co/
 ```python
 from huggingface_hub import hf_hub_download
 
-hf_hub_download(repo_id="kartiknarayan/facexformer", filename="facexformer/ckpts/model.pt", local_dir="./ckpts")
+hf_hub_download(repo_id="kartiknarayan/facexformer", filename="ckpts/model.pt", local_dir="./")
 ```
 The directory structure should finally be:
 
