@@ -63,7 +63,7 @@ python inference.py --model_path ckpts/model.pt \
 ```
 The output is stored in the specified "results_path".
 
-
+<img src='assets/viz_inthewild.png'>
 
 ## TODOs
 - Release dataloaders for the datasets used.
