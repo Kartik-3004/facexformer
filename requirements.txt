@@ -68,3 +68,4 @@ medpy==0.4.0
 mat73
 python-dotenv
 facenet-pytorch
+huggingface_hub
