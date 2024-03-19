@@ -61,6 +61,9 @@ python inference.py --model_path ckpts/model.pt \
 
 -- task = [parsing, landmarks, headpose, attributes, age_gender_race, visibility]
 ```
+The output is stored in the specified "results_path".
+
+
 
 ## TODOs
 - Release dataloaders for the datasets used.
