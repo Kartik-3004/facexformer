@@ -19,7 +19,6 @@ This is the official implementation of **[_FaceXFormer_](https://kartik-3004.git
 3️⃣ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across eight heterogenous tasks, all while maintaining the real-time performance of 37 FPS<br>
 
 <img src='assets/intro_viz.png'>
-<img src='assets/intro.png'>
 
 # News/Updates
 - [03/19/2024] 🔥 We release FaceXFormer.
