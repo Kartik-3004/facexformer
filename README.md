@@ -94,6 +94,14 @@ The output is stored in the specified "results_path".
 If you find _FaceXFormer_ useful for your research, please consider citing us:
 
 ```bibtex
+@misc{narayan2024facexformer,
+title={FaceXFormer : A Unified Transformer for Facial Analysis},
+author={Kartik Narayan and Vibashan VS and Rama Chellappa and Vishal M. Patel},
+year={2024},
+eprint={2403.12960},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
+}
 ```
 ## Contact
 If you have any questions, please create an issue on this repository or contact at knaraya4@jhu.edu
