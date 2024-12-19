@@ -6,43 +6,41 @@
 
 Johns Hopkins University
 
-<a href='https://kartik-3004.github.io/facexformer_web/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
+<a href='https://kartik-3004.github.io/facexformer/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
 <a href='https://arxiv.org/abs/2403.12960'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
 <a href='https://huggingface.co/kartiknarayan/facexformer'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange'></a>
 
 </div>
 
-Official implementation of **[_FaceXFormer_ : A Unified Transformer for Facial Analysis](https://kartik-3004.github.io/facexformer_web/)**.
+Official implementation of **[_FaceXFormer_ : A Unified Transformer for Facial Analysis](https://kartik-3004.github.io/facexformer/)**.
 <hr />
 
 ## Highlights
 
 **_FaceXFormer_**, is the first unified transformer for facial analysis:
 
-1️⃣ that is capable of handling a comprehensive range of facial analysis tasks such as face parsing, landmark detection, head pose estimation, attributes recognition, age/gender/race estimation and landmarks visibility prediction<br>
+1️⃣ that is capable of handling a comprehensive range of facial analysis tasks such as face parsing, landmark detection, head pose estimation, attributes recognition, age/gender/race estimation, facial expression recognition, and face visibility prediction<br>
 2️⃣ that leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token, enabling the integration of multiple tasks within a single framework<br>
-3️⃣ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across eight heterogenous tasks, all while maintaining the real-time performance of 37 FPS<br>
+3️⃣ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across nine heterogenous tasks, all while maintaining the real-time performance of 33.21 FPS<br>
 
-<img src='assets/intro_viz.png'>
+<img src='docs/static/images/intro.png'>
 
-> **<p align="justify"> Abstract:** *In this work, we introduce FaceXformer, an end-to-end unified transformer
-> model for a comprehensive range of facial analysis tasks such as face parsing, landmark detection,
-> head pose estimation, attributes recognition, and estimation of age, gender, race, and landmarks visibility.
-> Conventional methods in face analysis have often relied on task-specific designs and preprocessing techniques,
-> which limit their approach to a unified architecture. Unlike these conventional methods, our FaceXformer
-> leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token,
-> enabling the integration of multiple tasks within a single framework. Moreover, we propose a parameter-efficient
-> decoder, FaceX, which jointly processes face and task tokens, thereby learning generalized and robust face
-> representations across different tasks. To the best of our knowledge, this is the first work to propose a
-> single model capable of handling all these facial analysis tasks using transformers.  We conducted a
-> comprehensive analysis of effective backbones for unified face task processing and evaluated different task
-> queries and the synergy between them. We conduct experiments against state-of-the-art specialized models and
-> previous multi-task models in both intra-dataset and cross-dataset evaluations across multiple benchmarks.
-> Additionally, our model effectively handles images "in-the-wild," demonstrating its robustness and generalizability
-> across eight different tasks, all while maintaining the real-time performance of 37 FPS.* </p>
+> **<p align="justify"> Abstract:** *In this work, we introduce <i>FaceXFormer</i>, an end-to-end unified 
+transformer model capable of performing nine facial analysis tasks including face parsing, landmark detection, 
+head pose estimation, attribute prediction, and estimation of age, gender, race, expression, and face visibility 
+within a single framework. Conventional methods in face analysis have often relied on task-specific designs 
+and pre-processing techniques, which limit their scalability and integration into a unified architecture. 
+Unlike these conventional methods, <i>FaceXFormer</i> leverages a transformer-based encoder-decoder architecture 
+where each task is treated as a learnable token, enabling the seamless integration and simultaneous processing of 
+multiple tasks within a single framework. Moreover, we propose a novel parameter-efficient decoder, FaceX, which 
+jointly processes face and task tokens, thereby learning generalized and robust face representations across 
+different tasks. We jointly trained <i>FaceXFormer</i> on nine face perception datasets and conducted experiments 
+against specialized and multi-task models in both intra-dataset and cross-dataset evaluations across multiple benchmarks, showcasing state-of-the-art or competitive performance. Further, we performed a comprehensive analysis of different 
+backbones for unified face task processing and evaluated our model ``in-the-wild'', demonstrating its robustness and generalizability. To the best of our knowledge, this is the first work to propose a single model capable of 
+handling nine facial analysis tasks while maintaining real-time performance at 33.21 FPS.* </p>
 
 # :rocket: News
-- [03/19/2024] 🔥 We release FaceXFormer.
+- [03/19/2024] 🔥 We release <i>FaceXFormer</i>.
 
 # Installation
 ```bash
@@ -84,7 +82,7 @@ python inference.py --model_path ckpts/model.pt \
 ```
 The output is stored in the specified "results_path".
 
-<img src='assets/viz_inthewild.png'>
+<img src='docs/static/images/qualitative.png'>
 
 ## TODOs
 - Release dataloaders for the datasets used.
