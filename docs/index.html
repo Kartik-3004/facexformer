@@ -14,7 +14,7 @@
         }
     </style>
 
-    <title>SegFace</title>
+    <title>FaceXFormer</title>
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
@@ -48,19 +48,23 @@
             <div class="container is-max-desktop">
                 <div class="columns is-centered">
                     <div class="column has-text-centered">
-                        <h1 class="title is-2 publication-title"><i>SegFace</i> : Face Segmentation of Long-Tail Classes
+                        <h1 class="title is-2 publication-title"> <i>FaceXFormer</i> : A Unified Transformer <br> for
+                            Facial
+                            Analysis
                         </h1>
-                        <h2 style="font-size: 1.5em; color: dimgray; margin-bottom: .5em; margin-top: -.5em;">AAAI 2025
-                        </h2>
                         <div class="is-size-5 publication-authors">
+                            <!-- Group of first four authors -->
                             <div class="authors-group">
                                 <span class="author-block">
                                     <a href="https://kartik-3004.github.io/portfolio/" target="_blank">Kartik
-                                        Narayan</a>,
+                                        Narayan*</a>,
                                 </span>
                                 <span class="author-block">
-                                    <a href="https://vibashan.github.io/" target="_blank">Vibashan VS
-                                    </a>,
+                                    <a href="https://vibashan.github.io/" target="_blank">Vibashan VS*</a>,
+                                </span>
+                                <span class="author-block">
+                                    <a href="https://scholar.google.com/citations?user=L60tuywAAAAJ&hl=en"
+                                        target="_blank">Rama Chellappa</a>,
                                 </span>
                                 <span class="author-block">
                                     <a href="https://scholar.google.com/citations?user=AkEXTbIAAAAJ&hl=en"
@@ -101,7 +105,7 @@
                 </a>
               </span> -->
                                 <span class="link-block">
-                                    <a href="https://github.com/Kartik-3004/SegFace"
+                                    <a href="https://arxiv.org/abs/2403.12960"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="ai ai-arxiv"></i>
@@ -110,18 +114,12 @@
                                     </a>
                                 </span>
                                 <span class="link-block">
-                                    <a href="https://github.com/Kartik-3004/SegFace"
+                                    <a href="https://github.com/Kartik-3004/facexformer"
                                         class="external-link button is-normal is-rounded is-dark">
                                         <span class="icon">
                                             <i class="fab fa-github"></i>
                                         </span>
                                         <span>Code</span>
-                                    </a>
-                                </span>
-                                <span class="link-block">
-                                    <a href="https://huggingface.co/kartiknarayan/SegFace"
-                                        class="external-link button is-normal is-rounded is-dark">
-                                        <span>Huggingface Model</span>
                                     </a>
                                 </span>
                             </div>
@@ -135,35 +133,41 @@
 
     <section class="section">
         <div class="container is-max-desktop">
+            <!-- Abstract. -->
             <div class="columns is-centered has-text-centered">
                 <div class="column is-four-fifths">
-                    <h2 class="title is-3">Contributions</h2>
+
+                    <h2 class="title is-3">Motivation & Contribution</h2>
+                    <img src="./static/images/intro.png" alt="" border="0" height="600" width="1500">
+                    <img src="./static/images/intro_table.png" alt="" style="border:0; height:500px; width:1500px;">
                     <div class="content has-text-justified">
-                        <p>The key contributions of our work are as follows:
+                        <p>Comparison with representative methods under different task settings.
+                            <i>FaceXformer</i>
+                            can perform various facial analysis tasks in single model. FP - Face Parsing, LD - Land-
+                            marks Detection, HPE - Head Pose Estimation, Attr - Attributes
+                            Recognition, Age - Age, Gen - Gender, Race - Race Estimation,
+                            Exp - Facial Expression Recognition, and Vis - Face Visibility
                         </p>
                         <ul>
                             <li>
-                                We introduce a lightweight transformer decoder with learnable class-specific tokens,
-                                that ensures each token is
-                                dedicated to a specific class, thereby enabling independent modeling of classes. The
-                                design effectively addresses the
-                                challenge of poor segmentation performance of long-tail classes, prevalent in existing
-                                methods.
+                                In recent years, significant advancements have been made in facial analysis, developing
+                                state-of-the-art methods for
+                                various tasks. Despite these methods achieving promising performance, they cannot be
+                                integrated into a single pipeline due to their
+                                specialized model designs and task-specific pre-processing techniques.
                             </li>
-                            <li> Our multi-scale feature extraction and MLP fusion strategy, combined with a transformer
-                                decoder that leverages learnable
-                                class-specific tokens, mitigates the dominance of head classes during training and
-                                enhances the feature representation
-                                of long-tail classes.
+                            <li> <i>FaceXformer</i> is an end-to-end unified model capable of handling a comprehensive
+                                range of facial analysis tasks such as face parsing, landmark detection, head pose
+                                estimation, attributes prediction, and estimation of age, gender, race, epxression and face
+                                visibility.
                             </li>
-                            <li> <i>SegFace</i> establishes a new state-of-the-art performance on the LaPa dataset
-                                (93.03 mean F1 score) and the
-                                CelebAMask-HQ dataset (88.96 mean F1 score). Moreover, our model can be adapted for fast
-                                inference by simply swapping
-                                the backbone with a MobileNetV3 backbone. The mobile version achieves a mean F1 score of
-                                87.91 on the CelebAMask-HQ
-                                dataset with 95.96 FPS.
+                            <li> It leverages a transformer-based encoder-decoder architecture where
+                                each task is treated as a learnable token, enabling the integration of multiple tasks
+                                within a single framework.
                             </li>
+                            <li> It effectively handles images "in-the-wild," demonstrating its robustness and
+                                generalizability across eight heterogenous tasks, all while maintaining the real-time
+                                performance of 33.21 FPS.</li>
                         </ul>
 
                         </p>
@@ -179,23 +183,23 @@
                     <!-- Abstract. -->
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
-                            <h2 class="title is-3"><i>SegFace</i> Framework</h2>
+                            <h2 class="title is-3"><i>FaceXformer</i> Framework</h2>
                             <div class="content has-text-justified">
                                 <h5 class="subtitle has-text-centered"></h5>
 
-                                <img src="./static/images/segface.png" alt="" border=0 height=500 width=1500></img>
-                                <p>
-                                    Figure 1. The proposed architecture, <i>SegFace</i>, addresses face segmentation by
-                                    enhancing the performance on long-tail
-                                    classes through a transformer-based approach. Specifically, multi-scale features are
-                                    first extracted from an image
-                                    encoder and then fused using an MLP fusion module to form face tokens. These tokens,
-                                    along with class-specific tokens,
-                                    undergo self-attention, face-to-token, and token-to-face cross-attention operations,
-                                    refining both class and face tokens
-                                    to enhance class-specific features. Finally, the upscaled face tokens and learned
-                                    class tokens are combined to produce
-                                    segmentation maps for each facial region.
+                                <img src="./static/images/main_archi.png" alt="" border=0 height=500 width=1500></img></
+                                    <p>
+                                Overview of <i>FaceXformer</i> framework. It employs an encoder-decoder
+                                architecture, extracting multi-scale features from the input face image <b>I</b>, and
+                                fusing them into a unified representation <b>F</b> via MLP-Fusion. Task tokens <b>T</b>
+                                are processed alongside face representation <b>F</b> in the decoder, resulting in
+                                refined
+                                task-specific tokens <b><span style="position: relative; display: inline-block;">
+                                        T
+                                        <span
+                                            style="position: absolute; top: -7px; left: 0.6px; right: 0; font-size: smaller;">^</span>
+                                    </span></b>. These refined tokens are then used for
+                                task-specific predictions by passing through the unified head.
                                 </p>
 
 
@@ -207,110 +211,94 @@
 
             <section class="section">
                 <div class="container is-max-desktop">
+                    <!-- Abstract. -->
                     <div class="columns is-centered has-text-centered">
                         <div class="column is-four-fifths">
                             <h2 class="title is-3">Quantitative Results</h2>
                             <div class="content has-text-justified">
                                 <h5 class="subtitle has-text-centered"></h5>
-                                <img src="./static/images/quantitative_results.png" alt="" border="0" height=500
-                                    width=1500></img>
+                                <img src="./static/images/parsing.png" alt="" border=0 height=500
+                                    width=1500></img> </div>
                                 <p>
-                                    Table 1. Quantitative results on (a) LaPa dataset and (b) CelebAMask-HQ dataset
+                                    Comparison with specialized models and existing multi-task networks on Face Parsing.
+                                </p>
+                                <img src="./static/images/hpe_lnd_attr" alt="" border=0 height=500
+                                    width=1500></img> </div>
+                                <p>
+                                    Comparison with specialized models and existing multi-task networks on Headpose Estimation, Landmarks Detection and Attributes Prediction.
+                                </p>
+                                <img src="./static/images/results_others" alt="" border=0 height=500
+                                    width=1500></img> </div>
+                                <p>
+                                    Comparison with specialized models and existing multi-task networks on Facial Expression Recognition, Face Visibilty, and Age Estimation.
                                 </p>
                             </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="section">
+                <div class="container is-max-desktop">
+                    <!-- Abstract. -->
+                    <div class="columns is-centered has-text-centered">
+                        <div class="column is-four-fifths">
+                            <h2 class="title is-3">Qualitative Results</h2>
                             <div class="content has-text-justified">
                                 <h5 class="subtitle has-text-centered"></h5>
-                                <img src="./static/images/ablation_study.png" alt="" border=0 height=500
-                                    width=1500></img>
-                                <p>
-                                    Table 2. Ablation study for different backbones and varying
-                                    image resolution.
+                                <img src="./static/images/qualitative.png" alt="" border=0 height=500
+                                    width=1500></img><p>
+                                Qualitative results of <i>FaceXFormer</i>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="section">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered has-text-centered">
-                <div class="column is-four-fifths">
-                    <h2 class="title is-3">Qualitative Results</h2>
-                    <div class="content has-text-justified">
-                        <h5 class="subtitle has-text-centered"></h5>
-                        <img src="./static/images/qualitative_results_1.png" alt="" border="0" height=500
-                            width=1500></img>
-                        <p>
-                            Figure 2. The qualitative comparison highlights the superior performance of our
-                            method, <i>SegFace</i>, compared to DML-CSR. In (a),
-                            <i>SegFace</i> effectively segments both long-tail classes like earrings and necklaces as
-                            well as head classes such as hair and
-                            neck. In (b), it also excels in challenging scenarios involving multiple faces,
-                            human-resembling features, poor
-                            lighting, and occlusion, where DML-CSR struggles.
-                        </p>
-                    </div>
-                    <div class="content has-text-justified">
-                        <h5 class="subtitle has-text-centered"></h5>
-                        <img src="./static/images/qualitative_results_2.png" alt="" border=0 height=500
-                            width=1500></img>
-                        <p>
-                            Figure 3. Additional qualitative comparison of our proposed method, SegFace,
-                            compared to DML-CSR on the (a) CelebAMask- HQ and (b)
-                            LaPa dataset.
-                        </p>
-                    </div>
+
+            <section class="section" id="BibTeX">
+                <div class="container content is-max-desktop">
+                    <h2 class="title">BibTeX</h2>
+                    <pre><code>@article{narayan2024facexformer,
+    title={FaceXFormer: A Unified Transformer for Facial Analysis},
+    author={Narayan, Kartik and VS, Vibashan and Chellappa, Rama and Patel, Vishal M},
+    journal={arXiv preprint arXiv:2403.12960},
+    year={2024}
+}
+</code></pre>
                 </div>
-            </div>
-        </div>
-        </div>
-    </section>
+            </section>
 
-    <section class="section" id="BibTeX">
-        <div class="container content is-max-desktop">
-            <h2 class="title">BibTeX</h2>
-            <pre>@article{narayan2024segface,
-  title={SegFace: Face Segmentation of Long-Tail Classes},
-  author={Narayan, Kartik and VS, Vibashan and Patel, Vishal M},
-  journal={arXiv preprint arXiv:2412.08647},
-  year={2024}
-}</pre>
-        </div>
-    </section>
+            <section class="section">
+                <div class="container is-max-desktop content">
+                    <h5 class="title" style="font-size: 10px;"> Acknowledgement: The website template is taken from
+                        <span class="author-block">
+                            <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
+                    </h5>
 
-    <section class="section">
-        <div class="container is-max-desktop content">
-            <h5 class="title" style="font-size: 10px;"> Acknowledgement: The website template is taken from
-                <span class="author-block">
-                    <a href="https://nerfies.github.io/" target="_blank">Nerfies</a>
-            </h5>
+                </div>
+            </section>
 
-        </div>
-    </section>
+            <script>
+                const viewers = document.querySelectorAll(".image-compare");
+                viewers.forEach((element) => {
+                    let view = new ImageCompare(element, {
+                        hoverStart: true,
+                        addCircle: true
+                    }).mount();
+                });
 
-    <script>
-        const viewers = document.querySelectorAll(".image-compare");
-        viewers.forEach((element) => {
-            let view = new ImageCompare(element, {
-                hoverStart: true,
-                addCircle: true
-            }).mount();
-        });
-
-        $(document).ready(function () {
-            var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
-                lineNumbers: false,
-                lineWrapping: true,
-                readOnly: true
-            });
-            $(function () {
-                $('[data-toggle="tooltip"]').tooltip()
-            })
-        });
-    </script>
+                $(document).ready(function () {
+                    var editor = CodeMirror.fromTextArea(document.getElementById("bibtex"), {
+                        lineNumbers: false,
+                        lineWrapping: true,
+                        readOnly: true
+                    });
+                    $(function () {
+                        $('[data-toggle="tooltip"]').tooltip()
+                    })
+                });
+            </script>
 </body>
 
 </html>
