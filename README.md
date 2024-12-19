@@ -23,7 +23,9 @@ Official implementation of **[_FaceXFormer_ : A Unified Transformer for Facial A
 2️⃣ that leverages a transformer-based encoder-decoder architecture where each task is treated as a learnable token, enabling the integration of multiple tasks within a single framework<br>
 3️⃣ that effectively handles images "in-the-wild," demonstrating its robustness and generalizability across nine heterogenous tasks, all while maintaining the real-time performance of 33.21 FPS<br>
 
-<img src='docs/static/images/intro.png'>
+<p align="center" width="100%">
+  <img src='docs/static/images/intro.png'>
+</p>
 
 > **<p align="justify"> Abstract:** *In this work, we introduce <i>FaceXFormer</i>, an end-to-end unified 
 transformer model capable of performing nine facial analysis tasks including face parsing, landmark detection, 
@@ -36,7 +38,7 @@ multiple tasks within a single framework. Moreover, we propose a novel parameter
 jointly processes face and task tokens, thereby learning generalized and robust face representations across 
 different tasks. We jointly trained <i>FaceXFormer</i> on nine face perception datasets and conducted experiments 
 against specialized and multi-task models in both intra-dataset and cross-dataset evaluations across multiple benchmarks, showcasing state-of-the-art or competitive performance. Further, we performed a comprehensive analysis of different 
-backbones for unified face task processing and evaluated our model ``in-the-wild'', demonstrating its robustness and generalizability. To the best of our knowledge, this is the first work to propose a single model capable of 
+backbones for unified face task processing and evaluated our model in-the-wild, demonstrating its robustness and generalizability. To the best of our knowledge, this is the first work to propose a single model capable of 
 handling nine facial analysis tasks while maintaining real-time performance at 33.21 FPS.* </p>
 
 # :rocket: News
@@ -82,7 +84,9 @@ python inference.py --model_path ckpts/model.pt \
 ```
 The output is stored in the specified "results_path".
 
-<img src='docs/static/images/qualitative.png'>
+<p align="center" width="100%">
+  <img src='docs/static/images/qualitative.png'>
+</p>
 
 ## TODOs
 - Release dataloaders for the datasets used.
