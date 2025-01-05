@@ -44,7 +44,7 @@ handling nine facial analysis tasks while maintaining real-time performance at 3
 # :rocket: News
 - [03/19/2024] 🔥 We release <i>FaceXFormer</i>.
 
-# Installation
+## Installation
 ```bash
 conda env create --file environment_facex.yml
 conda activate facexformer
@@ -53,7 +53,7 @@ conda activate facexformer
 pip install torch==2.0.1+cu117 torchvision==0.15.2+cu117 torchaudio==2.0.2+cu117 --extra-index-url https://download.pytorch.org/whl/cu117
 pip install -r requirements.txt
 ```
-# Download Models
+## Download Models
 The models can be downloaded manually from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) or using python:
 ```python
 from huggingface_hub import hf_hub_download
@@ -67,7 +67,7 @@ The directory structure should finally be:
                      ├── network
                      └── inference.py                    
 ```
-# Usage
+## Usage
 
 Download trained model from [HuggingFace](https://huggingface.co/kartiknarayan/facexformer) and ensure the directory structure is correct.<br>
 For demo purposes, we have released the code for inference on a single image.<br>
