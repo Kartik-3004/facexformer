@@ -9,6 +9,7 @@ Johns Hopkins University
 <a href='https://kartik-3004.github.io/facexformer/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
 <a href='https://arxiv.org/abs/2403.12960v3'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
 <a href='https://huggingface.co/kartiknarayan/facexformer'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-orange'></a>
+<a href='https://colab.research.google.com/drive/1wtUl9THqwkHOK6Zu8myJTjZWatLnuqeh?usp=sharing'><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a>
 
 </div>
 
